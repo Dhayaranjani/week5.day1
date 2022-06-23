@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- Assignment:1 Sequential Flow
+ ================================
+1. Create BaseClass with preCondition() and postCodition() with @BeforeMethod and @AfterMethod
+2. Move the common code from all the 5 testcases into preCondition() and postCondition()
+3. Extend all the 5 test cases with BaseClass and execute sequentially and parallely using testng.xml
+ -->
+<suite name="Suite">
+  <test thread-count="5" name="Test" verbose="5">
+    <classes>
+      <class name="week5.day1.CreateLead"/>
+      <class name="week5.day1.DeleteLead"/>
+      <class name="week5.day1.DuplicateLead"/>
+      <class name="week5.day1.EditLead"/>
+      <class name="week5.day1.Login"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
